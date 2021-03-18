@@ -23,10 +23,8 @@ function App() {
     <a>Home</a>
     <a>Date 3/17/2021</a>
   </nav>
-    <p> 
-    Read through the instructions in the README.md file to build your NASA 
-    app! Have fun <span role="img" aria-label='go!'>🚀</span>! 
-  </p> 
+    <h1>NASA Photo of the Day 🚀</h1>
+    
   {nasData && nasData.map((nasa) => {
     return ( 
     <Photo 
@@ -35,11 +33,9 @@ function App() {
     />
   )
   }) 
-}
-{/* {nasData && <Photo nasDataURL={nasData[1].url}/> } */}
-
-</div>
-</>
+  }
+  </div>
+  </>
   );
 }
 export default App;
